@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#body1{
+	font-family: 'Quicksand', sans-serif;
+}
+#imagen1{
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+		.titulo{
+		font-size: 5rem;
+		background-color: #3439574f;
+		h2{
+		font-size: 3rem;
+		}
+	}
+}
+.texto_uno{
+	padding: 0.2rem;
+	font-size: 1rem;
+	background-color: #9e9e9eb8;
+	h4{
+	font-size: 2rem;
+	color: #f8f9fa;
+	}
+}
+.texto_dos{
+	@extend .texto_uno;
+}
+.texto_tres{
+	@extend .texto_uno;
+}
+
+/*Ejercicio @mixin y map no aplicables en el proyecto
+
+@mixin containertexto($padding, $color){
+	padding: $padding;
+	background-color: $color;
+} 
+.texto_uno{
+	@include containertexto(1em, #9e9e9eb8)
+}
+.texto_dos{
+	@include containertexto(1.5em, #ced4da)
+}
+.texto_tres{
+	@include containertexto(2em, #adb5bd)
+}
+
+$fondos: (
+  oscuro: #4d5052,
+  medio: #90979b,
+  claro: #d7dfe5,
+);
+
+.texto_uno{
+	 background-color: map-get($fondos, oscuro);
+}
+.texto_dos{
+	 background-color: map-get($fondos, claro); 
+}
+.texto_tres{
+	 background-color: map-get($fondos, medio);	 
+}
+*/
+
+@media all and (max-width: 768px){
+	#imagen1 .titulo{
+		font-size: 3rem;
+	}
+}
+.card-footer{
+	padding: 0.2em;
+	background-color: #21252980;
+	p{
+	font-family: 'Quicksand', sans-serif;
+	}
+}

@@ -1,0 +1,4 @@
+MODIFICACIONES SEO
+
+Se modificaron las etiquetas H1,H2 y H4, teniendo en cuenta el criterio jerárquico de cada título.
+Se agregaron las etiquetas header/footer en las secciones correspondientes. 
